@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>MY BLOG</title>
+		<style>
+			/*사이트 전체 margin, padding*/
+			*{margin: 0; padding: 0; font-family: 'THEHAPPYfruit'}
+			a {text-decoration: none;}
+			li {list-style: none;}
+		</style>
+
+		<style>
+			/*사이트 몸 크기*/
+			body { background-color: rgb(247, 248, 242);}
+			#page-wrapper{width: 1000px;  margin: 0 auto; font-size: 30px; color:rgb(58, 50, 50); text-align: center; box-shadow: 0 4px 10px rgba(100, 100, 100, 0.3);}
+		</style>
+		
+		<style>
+			/*header*/
+			#main-header{width: 1000px; height: 250px; line-height: 100px; background-image: url(배너.png); }
+			.master-title{font-size: 23px; color: #181818;}
+			.master-description{font-size: 15px; font-weight: 500;color: #383838;	}
+
+			/*내비게이션*/
+			.nav {width: 1000px; height: 47px; line-height: 100px; background: rgb(233, 101, 142); float: right;}			
+			.pull-left{float: left;}
+			.outer-menu-item{float: left; position: relative;}
+			.plus-menu-item{float: right; position: relative;}
+			.menu-title{display: block; height: 30px; line-height: 30px; text-align: center; padding: 5px 20px; padding-bottom: 12px}
+			.outer-menu-item:hover{background:black;color: white;}
+			.plus-menu-item:hover{color:blue;}
+			.pull-right{float:right;}
+
+			/*검색 양식*/
+			.search-bar{height: 26px;padding: 7px;}
+			.input-search{display: block;float: left; background-color: #FFFFFF; border: 1px solid #CCCCCC;
+				border-radius: 15px 0 0 15px; box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+				width: 120px; height: 24px; padding: 0 0 0 10px; font-size: 12px; color: #555555;}
+			.input-search-submit{display: block; float: left; width: 50px; height: 26px;
+				border-radius: 0 15px 15px 0; border: 1px solid #CCCCCC; margin-left: -1px;
+				vertical-align: top; display: inline-block;}
+			.input-search:focus{border-color: rgba(82,168,236, 0.8); outline: 0; box-shadow: inset 0 1px 1px rgba(0,0,0, 0.05);}
+            .inner-menu{display: none; position: absolute; top: 40px; left: 0; width: 100%;
+                background: white; box-shadow: 0 2px 6px rgba(5,5,5, 0.9); z-index: 1000;
+				text-align: center;}
+			.inner-menu-item > a {display: block; padding: 5px 10px; color: black; }
+			.inner-menu-item > a:hover{background: black; color: white;}
+		</style>
+
+		<style>
+			/*본문 내용*/
+			#content{overflow: hidden; padding: 0 50px;	 background: #FFF2CC;}
+			#main-section{float: left; width: 510px;}
+			#main-aside{float: right; width: 200px;}
+
+			/*본문 포스트*/
+			article{padding: 0 10px 20px 10px; border-bottom: 1px solid #C8C8C8;}
+			.article-header{padding: 20px 0;}
+			.article-title{font-size: 25px; font-weight: 500; padding-bottom: 10px;}
+			.article-date{font-size: 13px;}
+			.article-body{font-size: 18px; float: left;}
+
+			#imgimg{margin-top: 50px; margin-bottom:50px;}
+
+			/*사이드 메뉴*/
+			.aside-list{padding: 30px 0 30px 70px; }
+			.aside-list > h3{font-size: 19px; font-weight: 600; margin-bottom: 2px;}
+			.aside-list li a{margin-right: 3px; font-size: 17px; color: #6C6C6C;}
+			#main-footer{ width: 1000px; height: 36px;background-color: whitesmoke;}
+		</style>
+	</head>
+
+	<body>
+		<div id="page-wrapper">
+			<div id="main-header">
+				<hgroup>
+					<div class="pull-right">
+						<ul class="plus-menu">
+							<li class="plus-menu-item">
+								<span class="menu-title"><a href="3.로그인.html">LOG-IN</a></span>
+							</li>
+							<li class="plus-menu-item">
+								<span class="menu-title"><a href="2.회원가입.html">SIGN-UP</a></span>
+							</li>
+							<li class="plus-menu-item">
+								<span class="menu-title"><a href="1. 메인.html">HOME</a></span>
+							</li>
+						</ul>
+				</hgroup>
+			</div>
+				<div class="nav">
+					<div class="pull-left">
+						<ul class="outer-menu">
+							<li class="outer-menu-item">
+								<span class="menu-title"><a href="4.introduce.html">Introduce</a></span>
+							</li>
+							<li class="outer-menu-item">
+								<span class="menu-title"><a href="5.소통.html">Opinion</a></span>
+							</li>
+						</ul>
+					</div>
+					<div class="pull-right">
+						<div class="search-bar">
+							<form>
+								<input type="text" class="input-search" />
+								<input type="submit" class="input-search-submit" value="Search" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div id="content">
+				<section id="main-section">
+						<div class="article-body">
+							<img src="이미지\배경.png" id="imgimg" width=700px/>
+						</div>
+				
+				</section>
+
+				<aside id = "main-aside">
+					<div class="aside-list">
+						<h3>== SKINCARE ==</h3>
+						<ul>
+							<li><a href="6.pacialcare.html">PACIALCARE</a></li>
+							<li><a href="7.클렌징.html">CLEANSING</a></li>
+							<li><a href="8.선크림.html">SUNCARE</a></li>
+						</ul>
+					</div>
+					<div class="aside-list">
+						<h3>== MAKEUP ==</h3>
+						<ul>
+							<li><a href="9.피부.html">BASE</a></li>
+							<li><a href="10.lip.html">LIPMAKEUP</a></li>
+							<li><a href="11.eye.html">EYEMAKEUP</a></li>
+						</ul>
+					</div>
+					<div class="aside-list">
+						<h3>== OTHERS ==</h3>
+						<ul>
+							<li><a href="12.도구.html">TOOL</a></li>
+							<li><a href="13.바디.html">BODYCARE</a></li>
+								
+						</ul>
+					</div>
+				</aside>
+			</div>			
+
+			<footer id="main-footer">
+				<h6>예원 인스타 : @5555555nin</h6>
+			</footer>
+		</div>
+	</body>
+
+</html>
+
+

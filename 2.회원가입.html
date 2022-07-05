@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>회원 가입</title>
+   <link rel="stylesheet" href="전체 스타일.css">
+   <style>
+             input {border-radius: 20px;
+                    text-align: center;
+					font-weight: bold;}
+      table{ margin-left: 190px;margin-top: 10px; width: 500px; height: 150px; background-color: whitesmoke;
+         margin-bottom: 200px;
+			}
+h1{margin-top: 50px; margin-left: 180px;}
+   </style>
+   <script>
+      alert('반갑습니다:)')
+   </script>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="main-header">
+            <hgroup>
+                <div class="pull-right">
+                    <ul class="plus-menu">
+                      <li class="plus-menu-item">
+                        <span class="menu-title"><a href="3.로그인.html">LOG-IN</a></span>
+                      </li>
+                      <li class="plus-menu-item">
+                        <span class="menu-title"><a href="2.회원가입.html">SIGN-UP</a></span>
+                      </li>
+                      <li class="plus-menu-item">
+                        <span class="menu-title"><a href="1. 메인.html">HOME</a></span>
+                      </li>
+        
+                    </ul>
+            </hgroup>
+        </div>
+            <div class="nav">
+                <div class="pull-left">
+                    <ul class="outer-menu">
+                        <li class="outer-menu-item">
+                          <span class="menu-title"><a href="4.introduce.html">Introduce</a></span>
+                        </li>
+                        <li class="outer-menu-item">
+                          <span class="menu-title"><a href="5.소통.html">Opinion</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <div class="search-bar">
+                        <form>
+                            <input type="text" class="input-search" />
+                            <input type="submit" class="input-search-submit" value="Search" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="content">
+            <section id="main-section">
+                <h1>&lt; &nbsp;회원 가입&nbsp; &gt;</h1>
+                <form>
+                  <table>
+                    <tbody align="center">
+                      <tr>
+                        <td>이름</td>
+                        <td><input type="text" name="id" /></td>
+                      </tr>
+                      <tr>
+                        <td>생년월일</td>
+                        <td colspan="3"><select><option>년도</option>
+                            <option>2001년</option>
+                            <option>2000년</option>
+                            <option>1999년</option>
+                            <option>1998년</option>
+                            <option>1997년</option>
+                            <option>1996년</option>
+                            <option>1995년</option>
+                            <option>1994년</option>
+                            <option>1993년</option>
+                            <option>1992년</option>
+                            <option>1991년</option>
+                            <option>1990년</option></select>
+                        <select><option>월</option>
+                            <option>1월</option>
+                            <option>2월</option>
+                            <option>3월</option>
+                            <option>4월</option>
+                            <option>5월</option>
+                            <option>6월</option>
+                            <option>7월</option>
+                            <option>8월</option>
+                            <option>9월</option>
+                            <option>10월</option>
+                            <option>11월</option>
+                            <option>12월</option></select>
+                        <select><option>일</option>
+                            <option>1일</option>
+                            <option>2일</option>
+                            <option>3일</option>
+                            <option>4일</option>
+                            <option>5일</option>
+                            <option>6일</option>
+                            <option>7일</option>
+                            <option>8일</option>
+                            <option>9일</option>
+                            <option>10일</option>
+                            <option>11일</option>
+                            <option>12일</option>
+                            <option>13일</option>
+                            <option>14일</option>
+                            <option>15일</option>
+                            <option>16일</option>
+                            <option>17일</option>
+                            <option>18일</option>
+                            <option>19일</option>
+                            <option>20일</option>
+                            <option>21일</option>
+                            <option>22일</option>
+                            <option>23일</option>
+                            <option>24일</option>
+                            <option>25일</option>
+                            <option>26일</option>
+                            <option>27일</option>
+                            <option>28일</option>
+                            <option>29일</option>
+                            <option>30일</option>
+                            <option>31일</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td ><input id="man" type="radio" name="gender" value="m" >
+                         <label for="man">남자</label>
+                         <input id="woman" type="radio" name="gender" value="w" >
+                            <label for="woman">여자</label></td>
+            
+                      </tr>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text" name="id" /></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="password" /></td>
+                      </tr>
+                      <tr>
+                        <td>비밀번호 확인</td>
+                        <td><input type="password" name="password" /></td>
+                      </tr>
+                        <td></td>
+                        <td><input type="button" name="input" value="회원 가입" onclick="alert('가입 완료')" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+
+</body>
+
+</html>
